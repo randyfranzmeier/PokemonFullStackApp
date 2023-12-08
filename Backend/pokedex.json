@@ -1,0 +1,56 @@
+[
+    {
+      "name": "Bulbasaur",
+      "number": "001",
+      "type": "Grass / Poison",
+      "description": "A strange seed was planted on its back at birth. The plant sprouts and grows with this Pokémon."
+    },
+    {
+      "name": "Ivysaur",
+      "number": "002",
+      "type": "Grass / Poison",
+      "description": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs."
+    },
+    {
+      "name": "Venusaur",
+      "number": "003",
+      "type": "Grass / Poison",
+      "description": "The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight."
+    },
+    {
+      "name": "Charmander",
+      "number": "004",
+      "type": "Fire",
+      "description": "It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail."
+    },
+    {
+      "name": "Charmeleon",
+      "number": "005",
+      "type": "Fire",
+      "description": "It has a barbaric nature. In battle, it whips its fiery tail around and slashes away with sharp claws."
+    },
+    {
+      "name": "Charizard",
+      "number": "006",
+      "type": "Fire / Flying",
+      "description": "It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames."
+    },
+    {
+      "name": "Squirtle",
+      "number": "007",
+      "type": "Water",
+      "description": "When it retracts its long neck into its shell, it squirts out water with vigorous force."
+    },
+    {
+      "name": "Wartortle",
+      "number": "008",
+      "type": "Water",
+      "description": "It is recognized as a symbol of longevity. If its shell has algae on it, that Wartortle is very old."
+    },
+    {
+      "name": "Blastoise",
+      "number": "009",
+      "type": "Water",
+      "description": "It firmly plants its feet on the ground before shooting water from the jets on its back."
+    }
+  ]
