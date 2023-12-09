@@ -1,0 +1,100 @@
+ .mainContainer {
+    width: 100%;
+    /* display: flex;
+    justify-content: space-evenly;
+    align-items: center; */
+ }
+
+ .pokTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .rowWrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+
+ }
+ 
+ .createPokContainer {
+     margin-top: 3%;
+     width: 50%;
+     flex: 1 1 auto;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     border: 2px solid black;
+     background-image: linear-gradient(180deg, grey, white);
+     box-shadow: 10px 10px rgb(119, 117, 117);
+ }
+
+ .row1{
+    margin-top: 2%;;
+ }
+
+ .row1, .row2 {
+     margin-left: auto;
+     margin-right: auto;
+     width: 100%;
+     position:relative;
+     display: flex;
+     justify-content: space-around;
+     align-items: flex-start;
+     flex-direction: row;
+     margin-bottom: 3%;
+ }
+
+ form {
+     margin-bottom: 20px;
+ }
+
+ textarea {
+     resize: none;
+ }
+
+ label {
+     margin-right: 2%;
+ }
+
+ #name, #number, #type, #description {
+    /* border: 2px solid blue; */
+    border-image: linear-gradient(to right, yellow, lightpink);
+    border-image-slice: 1;
+ }
+
+ #image1 {
+    width: 55%;
+    height: 55%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ #image2 {
+    width: 55%;
+    height: 55%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ .image1container, .image2container {
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+ }
+
+ .submitButton {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 2%;
+ }
+
+ #submit {
+    background-image:linear-gradient(to right, yellow, lightpink); 
+    border-radius: 20px;
+ }
