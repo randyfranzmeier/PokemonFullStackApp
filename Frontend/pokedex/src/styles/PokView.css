@@ -1,6 +1,8 @@
 
-
-    #pName, #pNumber, #pType, #pDescription {
-        color:black;
-        text-decoration: solid;
-    }
+.viewContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to left, pink, yellow);
+}

@@ -57,6 +57,7 @@
 
  label {
      margin-right: 2%;
+     word-wrap: break-word;
  }
 
  #name, #number, #type, #description {
@@ -98,3 +99,4 @@
     background-image:linear-gradient(to right, yellow, lightpink); 
     border-radius: 20px;
  }
+

@@ -1,0 +1,15 @@
+#pName, #pNumber, #pType, #pDescription {
+    color:black;
+    text-decoration: solid;
+    font-weight: bold;
+}
+
+.entryContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    border: 3px solid black;
+    margin-bottom: 1%;
+}

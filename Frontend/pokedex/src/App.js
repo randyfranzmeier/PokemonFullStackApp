@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar';
 import CreatePok from './components/CreatePok';
+import PokView from './components/PokView';
 import './App.css';
 import React from 'react';
 
@@ -8,6 +9,7 @@ function App() {
     <React.Fragment>
       <Navbar />
       <CreatePok />
+      <PokView />
     </React.Fragment>
   );
 }

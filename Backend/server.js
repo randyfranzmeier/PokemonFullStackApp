@@ -3,11 +3,28 @@ const app = express();
 const fs = require('fs');
 const bodyParser = require('body-parser');
 const PORT = process.env.PORT | 3001;
+const cors = require('cors');
+app.use(cors());
 
 
 //api to get all the items in the database
 app.get('/api/getAllEntries', (req, res) => {
-//retrieve all items in database
+    fs.readFile('pokedex.json', "utf-8", (err, data) =>{
+        if(err) res.status(500).send("error");
+        else {
+            try {
+                let dataString = JSON.stringify(data);
+                if(dataString.length !== 0) {
+                    res.send(JSON.parse(dataString));
+                }
+            }
+            catch(err) {
+                res.status(500).send("error");
+            }
+
+        }
+        res.end();
+    })
 })
 
 //api to get a specific item (in search bar)
