@@ -11,22 +11,27 @@ export default function CreatePok() {
   let desRef = useRef(null);
 
   let  addToList = async () => {
-    const postData = {"name":nameRef.current.value,
+    let postData = {"name":nameRef.current.value,
                       "number": numRef.current.value,
                       "type": typeRef.current.value,
-                      "description": desRef.current.value}
+                      "description": desRef.current.value};
+
     let response = await fetch('http://localhost:3001/api/addEntry', {
       method: "POST",
       mode: "cors",
-      headers: {"Content-Type": "Application/json"},
+      headers: {"Content-Type": "application/json"},
       body: JSON.stringify(postData) //serialize
-    }).catch(error =>console.log("an error occured:", error))
+    }).catch(error =>console.log("an error occured:", error));
+    // if(typeof response !== 'undefined') {
     if(response.ok) {
-      alert("data saved successfully")
+      alert("data saved successfully");
     }
     else {
-      document.getElementById('errorMessage').textContent = "Unable to save data. Please refresh page and try again."
-    }
+      alert("error saving data");
+     }
+  //}
+    
+
   }
 
 

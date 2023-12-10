@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const PORT = process.env.PORT | 3001;
 const cors = require('cors');
 app.use(cors());
+app.use(bodyParser.json());
 
 
 //api to get all the items in the database
@@ -39,8 +40,24 @@ app.delete('/api/exterminate:id', (req, res) => {
 
 //api to post data to the json file
 app.post('/api/addEntry', (req, res) => {
-    //obtain all data, then push new item to array and append that to json file
-})
+    //res.header('Access-Control-Allow-Origin', '*'); 
+    fs.readFile('pokedex.json', 'utf-8', (err, data) =>{
+        if(err) res.status(500).send("error posting data");
+        else {
+            let fileContent = JSON.parse(data); //json array
+            //loop through array and make sure name and number are non-repeated, if they aren't repeated
+            fileContent.push(req.body); //add element
+            //check if list is empty
+            if(fileContent.length > 0) {
+            fs.writeFile('pokedex.json', JSON.stringify(fileContent, null, 2), 'utf-8', err =>{
+                if(err) res.status(500).send("error")
+                else res.status(200).send("success");
+            res.end();
+            })
+        }
+        }
+    })
+});
 
 //start the server
 app.listen(PORT, ()=>console.log(`server listening on port ${PORT}`));

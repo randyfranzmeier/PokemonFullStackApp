@@ -11,17 +11,24 @@ export default function PokView() {
         let response = await fetch('http://localhost:3001/api/getAllEntries', {
             method: "GET",
             mode: "cors",
-            headers: { "Content-Type": "Application/json" },
+            headers: { "Content-Type": "application/json" },
         }).catch(err => {
             console.error("an error occured: ", err);
             //display error message
         })
+        if (typeof response !== 'undefined') {
+            if (response.ok) {
+                let resObj = await response.json();
+                let arr = Array.from(resObj);
+                setPokList(arr);
+                //load data onto page
+            }
+        }
+        else {
+            let errmsg = document.getElementById('errorOccured');
+            errmsg.textContent = "An unexpected error occured loading data.";
+            errmsg.style.color = "red";
 
-        if (response.ok) {
-            let resObj = await response.json();
-            let arr = Array.from(resObj);
-            setPokList(arr);
-            //load data onto page
         }
     }
 
@@ -34,6 +41,7 @@ export default function PokView() {
     return (
         <div className="viewContainer">
             <h1>Pokemon character information:</h1>
+            <h3 id="errorOccured"></h3>
             {pokList.map(x => {
                 return <PokEntry key={x.name}
                     name={x.name}
