@@ -1,10 +1,13 @@
 import '../styles/PokView.css';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import PokEntry from './PokEntry';
+import {ListContext} from './ListContext';
+
 export default function PokView() {
     //this is the parent component. I will have a list to store the entries, and then render them accordingly. When a new task 
     //is added or the page loads, the list will update.
-    const [pokList, setPokList] = useState([]);
+    //const [pokList, setPokList] = useState([]);
+    const [pokItems, setPokItems] = useContext(ListContext);
 
 
     let getEntries = async () => {
@@ -20,7 +23,7 @@ export default function PokView() {
             if (response.ok) {
                 let resObj = await response.json();
                 let arr = Array.from(resObj);
-                setPokList(arr);
+                setPokItems(arr);
                 //load data onto page
             }
         }
@@ -42,7 +45,7 @@ export default function PokView() {
         <div className="viewContainer">
             <h1>Pokemon character information:</h1>
             <h3 id="errorOccured"></h3>
-            {pokList.map(x => {
+            {pokItems.map(x => {
                 return <PokEntry key={x.name}
                     name={x.name}
                     number={x.number}

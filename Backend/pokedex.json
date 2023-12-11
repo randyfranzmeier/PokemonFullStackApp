@@ -22,5 +22,29 @@
     "number": "69",
     "type": "Unknown",
     "description": "mmm...bananas"
+  },
+  {
+    "name": "trevor",
+    "number": "33",
+    "type": "alien",
+    "description": "Greetings earthling"
+  },
+  {
+    "name": "billy",
+    "number": "034",
+    "type": "sdf",
+    "description": "et"
+  },
+  {
+    "name": "Buzz",
+    "number": "4",
+    "type": "sdf",
+    "description": "sdfa"
+  },
+  {
+    "name": "BigMik",
+    "number": "5",
+    "type": "sfa",
+    "description": "eafe"
   }
 ]
