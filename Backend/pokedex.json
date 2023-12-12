@@ -6,45 +6,15 @@
     "description": "A strange seed was planted on its back at birth. The plant sprouts and grows with this Pokémon."
   },
   {
-    "name": "Ivysaur",
-    "number": "002",
-    "type": "Grass / Poison",
-    "description": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs."
-  },
-  {
-    "name": "Venusaur",
-    "number": "003",
-    "type": "Grass / Poison",
-    "description": "The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight."
-  },
-  {
     "name": "BigMike",
     "number": "69",
     "type": "Unknown",
-    "description": "mmm...bananas"
+    "description": "MMMM...bananas"
   },
   {
     "name": "trevor",
     "number": "33",
-    "type": "alien",
-    "description": "Greetings earthling"
-  },
-  {
-    "name": "billy",
-    "number": "034",
-    "type": "sdf",
-    "description": "et"
-  },
-  {
-    "name": "Buzz",
-    "number": "4",
-    "type": "sdf",
-    "description": "sdfa"
-  },
-  {
-    "name": "BigMik",
-    "number": "5",
-    "type": "sfa",
-    "description": "eafe"
+    "type": "water",
+    "description": "asdfasdf"
   }
 ]

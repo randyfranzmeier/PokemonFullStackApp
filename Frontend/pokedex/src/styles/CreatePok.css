@@ -34,6 +34,7 @@
 
  .row1{
     margin-top: 2%;;
+    /* justify-content:space-evenly; */
  }
 
  .row1, .row2 {
@@ -42,22 +43,41 @@
      width: 100%;
      position:relative;
      display: flex;
-     justify-content: space-around;
+     /* flex: 1 0 auto; */
+     min-width: 0;
+     justify-content:center;
      align-items: flex-start;
      flex-direction: row;
      margin-bottom: 3%;
+     gap: 10%; 
  }
 
  form {
      margin-bottom: 20px;
  }
 
+ .nameContainer, .typeContainer {
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: space-between; */
+    flex-direction: column;
+ }
+
+.numberContainer, .desContainer {
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: space-between; */
+    flex-direction: column;
+}
+
+
+
  textarea {
      resize: none;
  }
 
  label {
-     margin-right: 2%;
+    font-size: 150%;
      word-wrap: break-word;
  }
 

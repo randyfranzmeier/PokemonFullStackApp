@@ -19,13 +19,13 @@ export default function CreatePok() {
     let isDuplicate = false;
     pokItems.forEach(element =>{
       if(element.name === obj.name) {
-        numberInputError.textContent = "Name already taken. Unable to save data.";
-        numberInputError.style.color = "red";
+        nameInputError.textContent = "Name already taken.";
+        nameInputError.style.color = "red";
         isDuplicate = true;
       }
       else if (element.number === obj.number) {
-        nameInputError.textContent = "number already taken. Unable to save data.";
-        nameInputError.style.color = "red";
+        numberInputError.textContent = "number already taken.";
+        numberInputError.style.color = "red";
         isDuplicate = true;
       }
     });
@@ -54,7 +54,7 @@ export default function CreatePok() {
        }
       }
       else {
-        event.preventDefault();
+        event.preventDefault()//so page doesn't refresh
       } 
 
   }
@@ -73,20 +73,29 @@ export default function CreatePok() {
         </div>
         <form id="pokedexForm" className="createPokContainer" onSubmit={addToList}>
           <div className="row1">
+            <div className="nameContainer">
             <label htmlFor="name">Name:</label>
-            <input type="text" id="name" name="name" ref={nameRef} required /><br /><br />
-            <p id="nameError"></p>
+            <input type="text" id="name" name="name" ref={nameRef} required />
+            <p id="nameError"></p><br /><br />
+            </div>
+
+            <div className="numberContainer">
             <label htmlFor="number">Number:</label>
-            <input type="text" id="number" name="number" ref={numRef} required /><br /><br />
-            <p id="numberError"></p>
+            <input type="text" id="number" name="number" maxLength={3}  ref={numRef} required />
+            <p id="numberError"></p><br /><br />
+            </div>
           </div>
 
           <div className="row2">
+            <div className="typeContainer">
             <label htmlFor="type">Type:</label>
             <input type="text" id="type" name="type" ref={typeRef} required /><br /><br />
+            </div>
 
-            <label htmlFor="description">Description:</label><br />
+            <div className="desContainer">
+            <label htmlFor="description">Description:</label>
             <textarea id="description" name="description" ref={desRef} required></textarea><br /><br />
+            </div>
           </div>
           <div className="submitButton">
             <input id="submit" type="submit" value="Add to Pokedex" />

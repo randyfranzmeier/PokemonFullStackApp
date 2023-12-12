@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar';
 import CreatePok from './components/CreatePok';
 import PokView from './components/PokView';
+import SearchBar from './components/SearchBar';
 import './App.css';
 import React from 'react';
 import {useState} from 'react';
@@ -13,6 +14,7 @@ const [pokItems, setPokItems] = useState([{}]);
     <React.Fragment>
       <Navbar />
       <ListContext.Provider value={[pokItems, setPokItems]}>
+      <SearchBar />
       <CreatePok />
       <ErrorBoundary fallback={<h1>An error occured</h1>}>
       <PokView />
