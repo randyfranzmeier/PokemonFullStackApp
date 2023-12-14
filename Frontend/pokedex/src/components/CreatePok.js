@@ -21,11 +21,13 @@ export default function CreatePok() {
       if(element.name === obj.name) {
         nameInputError.textContent = "Name already taken.";
         nameInputError.style.color = "red";
+        nameInputError.style.color = "red";
         isDuplicate = true;
       }
       else if (element.number === obj.number) {
         numberInputError.textContent = "number already taken.";
         numberInputError.style.color = "red";
+        numberInputError.style.fontWeight = "bold";
         isDuplicate = true;
       }
     });

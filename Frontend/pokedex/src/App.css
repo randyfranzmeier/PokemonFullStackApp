@@ -1,4 +1,5 @@
 html {
-  background-color: rgb(136, 132, 132);
+  /* background-color: rgb(136, 132, 132); */
+  background-image: linear-gradient(to right, grey, lightgrey);
   font-family: Arial, sans-serif;
 }

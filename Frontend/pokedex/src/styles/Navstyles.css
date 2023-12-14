@@ -1,9 +1,11 @@
 nav {
-    color: black;
+    color: white;
     background: linear-gradient(to right, rgb(59, 63, 65), lightgrey);
+    /* background-color:black; */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: -2.5%;
 }
 nav>ul>li {
     list-style-type: none;
@@ -13,4 +15,5 @@ nav>ul>li {
 
 #appName {
     font-weight: bold;
+
 }

@@ -16,5 +16,17 @@
     "number": "33",
     "type": "water",
     "description": "asdfasdf"
+  },
+  {
+    "name": "jenny",
+    "number": "867",
+    "type": "ex",
+    "description": "*Song from the 80's*"
+  },
+  {
+    "name": "Andrew",
+    "number": "65",
+    "type": "dude",
+    "description": "it is wednesday my dudes"
   }
 ]

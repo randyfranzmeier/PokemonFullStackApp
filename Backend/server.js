@@ -1,4 +1,4 @@
-const express = require('express');
+const express = require('express'); //using express framework
 const app = express();
 const fs = require('fs');
 const bodyParser = require('body-parser');

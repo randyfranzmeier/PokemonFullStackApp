@@ -5,5 +5,7 @@
     align-items: center;
     flex-direction: column;
     /*background-image: linear-gradient(to left, pink, yellow);*/
-    background-color: rgb(136, 132, 132);
+    /* background-color: rgb(136, 132, 132); */
+    /* background-color: rgb(86, 99, 100) */
+    border-top: 2px solid black;
 }

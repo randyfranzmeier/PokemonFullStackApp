@@ -12,7 +12,10 @@
     width: 50%;
     border: 3px solid black;
     margin-bottom: 1%;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
+    background-color: whitesmoke;
+    border-image: linear-gradient(to right, yellow, lightpink);
+    border-image-slice: 1;
 }
 
 #delete {
