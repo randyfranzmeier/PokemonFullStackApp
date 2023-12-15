@@ -26,23 +26,6 @@
     border-radius: 10px;
 }
 
-/* .searchLogo {
-    height: 30%;
-    width: 40%;
-    /* background-color: white; 
-    display: grid;
-    place-items: center;
-    background-color: white;
-    background-position: 50%;
-    border-radius: 10px;
-    margin-left: -8%;
-} 
-
-.searchLogo>#searchImg {
-    height: 38%;
-    width: 78%;
-    border-radius: 10px;
-}*/
 
 .input {
     display: flex;
@@ -59,10 +42,9 @@
     flex-direction: column;
 }
 
-a:hover {
-    text-decoration: underline;
+/* a:hover {
     cursor: pointer;
-}
+} */
 
 input:focus {
     outline: none;
