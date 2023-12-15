@@ -9,7 +9,7 @@ export default function SearchBar() {
     const[isSearching, setIsSearching] = useState(false);
 
     let filterSearch = (event) =>{
-        const wordDesired = event.target.value.toLowerCase();
+        const wordDesired = event.target.value.toLowerCase(); 
         if(wordDesired === "") {
             setFilter([]);
         }
@@ -17,47 +17,32 @@ export default function SearchBar() {
         const searchFilter = pokItems.filter(value =>{
             return value.name.toLowerCase().includes(wordDesired);
         })
-        setFilter(searchFilter);
+        console.log("search filter length: " + searchFilter.length + "type:" + typeof searchFilter);
+        searchFilter.length === 0? setFilter([{"name": "no results"}]): setFilter(searchFilter);
     }
     }
 
-    let handleSearchClick = (event) =>{
-        console.log("Item clicked!");
-    }
-
-    let changeSearchState = () =>{
-        setIsSearching(false);
-    }
-
-    let handleSearchState = () =>{
-        setIsSearching(true);
-    }
-
+    
     let resetFilter = () =>{
         setFilter([]);
     }
 
-    let resultDisplay = () =>{
-        if(!isSearching) {
-            resetFilter();
-        }
-    }
+
 
     return (
         
         <section className="main">
         <div className="search">
             <div className="input">
-                <input id="searchInput" type="text" placeholder={"Search pokedex"} onChange={filterSearch} onBlur={resultDisplay} ></input>{/*onBlur={resultDisplay}*/}
+                <input id="searchInput" type="text" placeholder={"Search pokedex"} onChange={filterSearch} onBlur={resetFilter} ></input>
             </div>
-            {/* { isSearching === true &&( */}
             <div className='results'>
                 {filter.map((value, key) =>{
-                    return <a onClick={handleSearchClick} onMouseOver={handleSearchState} onMouseOut={changeSearchState}>{value.name}</a>
+                    return <a>{value.name}</a>
                 
                 })}
                 
-            </div> {/*)}*/}
+            </div> 
 
         </div>
         </section> 

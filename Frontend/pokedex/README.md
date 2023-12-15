@@ -7,6 +7,13 @@ Randy Franzmeier
 # purpose
 The purpose of this assignment is to better leverage full stack fundamentals
 while catering to pokemon fans
+
+# Instructions
+1. Once in the PokemonFullStackApp directory, cd to Backend
+2. run node server.js to start the backend
+3. create a new terminal and go to PokemonFullStackApp/Frontend/pokedex
+4. run npm start to start the frontend
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
