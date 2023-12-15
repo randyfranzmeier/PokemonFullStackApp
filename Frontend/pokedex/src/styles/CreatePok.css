@@ -120,7 +120,9 @@
  }
 
  #submit {
-    background-image:linear-gradient(to right, yellow, lightpink); 
+    background-image:linear-gradient(360deg, red, white); 
+    /* background-color: rgb(91, 91, 245); */
     border-radius: 20px;
+    font-weight: bold;
  }
 
